@@ -1,0 +1,14 @@
+[
+  {
+    "id":"1",
+    "name":"Kapı Açık",
+    "time":"5",
+    "roomName":"Meze Odası-1"
+  },
+  {
+    "id":"2",
+    "name":"Yüksek Sıcalıklık",
+    "time":"10",
+    "roomName":"Meze Odası-2"
+  }  
+]

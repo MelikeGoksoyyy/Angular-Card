@@ -1,0 +1,36 @@
+{
+  "speedSettings": [
+    {
+      "id": "1",
+      "name": "1x",
+      "value": "200"
+    },
+    {
+      "id": "2",
+      "name": "2x",
+      "value": "200"
+    },
+    {
+      "id": "3",
+      "name": "3x",
+      "value": "1000"
+    }
+  ],
+  "alarmList": [
+    {
+      "alarmId": "1",
+      "name": "Kapı Açık",
+      "type": "yellow"
+    },
+    {
+      "alarmId": "2",
+      "name": "Yüksek Sıcaklık",
+      "type": "red"
+    },
+    {
+      "alarmId": "3",
+      "name": "Yüksek Basınç",
+      "type": "red"
+    }
+  ]
+}

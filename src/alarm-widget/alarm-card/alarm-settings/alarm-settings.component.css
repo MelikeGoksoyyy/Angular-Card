@@ -1,0 +1,13 @@
+.card {    
+    text-align: left;
+    background-color: brown;
+    padding : 2%;
+    margin: auto;
+    margin-bottom: 5%!important;
+    width: 20%;
+    height: 10%;
+}
+.card-row{
+    display: inline-table;
+    margin: 2% 4%;
+}
