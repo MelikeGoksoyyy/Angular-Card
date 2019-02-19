@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  
+  flipped = true;
+  flipIt() {
+    this.flipped = !this.flipped;
+  }
+  
 }

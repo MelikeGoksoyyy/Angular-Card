@@ -1,25 +1,18 @@
-<div style="text-align:center">
-    <h1>Alarm Settings Component</h1>
-</div>
-
-<!-- {{settingsData | json}} -->
-<div class="card">
 <div>
+        <h1 style="text-align:center">Alarm Settings Component</h1>
+        <!-- {{settingsData | json}} -->
         <h3 class="card-row">Animasyon Hızı : </h3>
         <select name="" id="">
             <option *ngFor="let s of settingsData.speedSettings" [value]="s.id">{{s.name}}</option>
         </select>
-</div>
-    
-<div>
+        
         <h3 class="card-row">Alarmlar : </h3>
         <select name="" id="">
             <option *ngFor="let s of settingsData.alarmList" [value]="s.id">{{s.name}}</option>
         </select>
-</div>
-   
+   </div>
+  
 
-</div>
 
 <!-- <p *ngFor="let elements of settingsData">{{elements[0].name}}</p>
 

@@ -21,6 +21,4 @@ export class AlarmSettingsComponent implements OnInit {
       this.settingsData=result;
     })
   }
-
-
 }

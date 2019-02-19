@@ -1,3 +1,44 @@
-p {
-  font-family: Lato;
+body { font-family: sans-serif; }
+
+.scene {
+  width: 25% !important;
+  height: 25% !important;
+  perspective: 600px;
+  margin: 40px auto;
+}
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+.card__face {
+    position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #FFF;
+        text-align: center;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+   
+    color: #FFF;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.card.voted {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }

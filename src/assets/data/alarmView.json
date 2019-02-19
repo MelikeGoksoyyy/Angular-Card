@@ -10,5 +10,17 @@
     "name":"Yüksek Sıcalıklık",
     "time":"10",
     "roomName":"Meze Odası-2"
+  },
+  {
+    "id":"3",
+    "name":"Kapı Açık",
+    "time":"15",
+    "roomName":"Meze Odası-3"
+  },
+  {
+    "id":"4",
+    "name":"Yüksek Sıcalıklık",
+    "time":"20",
+    "roomName":"Meze Odası-4"
   }  
 ]

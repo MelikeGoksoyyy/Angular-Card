@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import {AlarmService} from '../../alarm.service'
-
+import {CarouselModule} from "angular2-carousel";
 
 @Component({
   selector: 'app-alarm-view',
@@ -22,4 +22,6 @@ export class AlarmViewComponent implements OnInit {
       this.data = result;
     });    
   }
+
+  
 }
