@@ -1,11 +1,2 @@
-<div class="scene">
-    <button class="btn-primary btn-group-justified" ngbButton (click)="flipIt()">Flip: {{ flipped }}</button>
-    <div id="card-animation" class="card" [class.voted]="flipped">
-        <div class="card__face card__face--front">
-            <app-alarm-settings></app-alarm-settings>
-        </div>
-        <div class="card__face card__face--back">
-              <app-alarm-view></app-alarm-view> 
-        </div>
-    </div>
-</div>
+<h1>App Comp</h1>
+<alarm-card></alarm-card>

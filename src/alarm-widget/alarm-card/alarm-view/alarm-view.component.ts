@@ -1,11 +1,53 @@
 import { Component, OnInit } from '@angular/core'
-import {AlarmService} from '../../alarm.service'
 import {CarouselModule} from "angular2-carousel";
+import {
+  trigger,
+  transition,
+  query,
+  style,
+  animate,
+  group
+} from '@angular/animations';
+
+
+import {AlarmService} from '../../alarm.service'
 
 @Component({
-  selector: 'app-alarm-view',
+  selector: 'alarm-view',
   templateUrl: './alarm-view.component.html',
-  styleUrls: ['./alarm-view.component.css']
+  animations: [
+    trigger('slider', [
+      transition(":increment", group([
+        query(':enter', [
+          style({
+            left: '100%'
+          }),
+          animate('0.5s ease-out', style('*'))
+        ]),
+        query(':leave', [
+          animate('0.5s ease-out', style({
+            left: '-100%'
+          }))
+        ])
+      ])),
+      transition(":decrement", group([
+        query(':enter', [
+          style({
+            left: '-100%'
+          }),
+          animate('0.5s ease-out', style('*'))
+        ]),
+        query(':leave', [
+          animate('0.5s ease-out', style({
+            left: '100%'
+          }))
+        ])
+      ])),
+    ])
+  ],
+  styles: [`
+  
+  `]
 })
 export class AlarmViewComponent implements OnInit {
 

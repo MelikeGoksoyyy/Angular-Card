@@ -1,4 +1,4 @@
-  <!--
+<!--
 <carousel-component>
   <div class="item-carousel" *ngFor="let elements of data">
     <div class="alarm-view">
@@ -11,14 +11,12 @@
   </div>
 </carousel-component>
 -->
-<carousel-component >
-  
-    <div class="item-carousel item-carousel-style" *ngFor="let elements of data">
-        <h1 style="text-align:center">Alarm View Component</h1>
-        <div><b>Alarm Adı: {{elements.name}}</b></div>
-        <div><b>Alarm Süresi: {{elements.time}}</b></div>
-        <div><b>Oda Adı: {{elements.roomName}}</b></div>
-    </div>
-    <div class="item-carousel item-carousel-style" >c</div>
-    
-</carousel-component>
+<!-- <carousel-component></carousel-component> -->
+<div class="slider-container">
+  <div class="card slide" *ngFor="let elements of data">
+    <h1 style="text-align:center">Alarm View Component</h1>
+    <div><b>Alarm Adı: {{elements.name}}</b></div>
+    <div><b>Alarm Süresi: {{elements.time}}</b></div>
+    <div><b>Oda Adı: {{elements.roomName}}</b></div>
+  </div>
+</div>

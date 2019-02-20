@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import {AlarmService} from '../../alarm.service'
+import { AlarmService } from '../../alarm.service'
 
 @Component({
-  selector: 'app-alarm-settings',
+  selector: 'alarm-settings',
   templateUrl: './alarm-settings.component.html',
   styleUrls: ['./alarm-settings.component.css']
 })
 export class AlarmSettingsComponent implements OnInit {
 
   settingsData = [];
-  constructor(private _service : AlarmService) { }
+  constructor(private _service: AlarmService) { }
 
   ngOnInit() {
-   this.fetchSettings();
+    this.fetchSettings();
   }
 
-  fetchSettings(){
-    this._service.fetchAlarmSettings()
-    .subscribe(result => {
-      this.settingsData=result;
+  fetchSettings() {
+    this._service.fetchAlarmSettings().subscribe(result => {
+      this.settingsData = result;
+      console.log(result);
     })
   }
 }

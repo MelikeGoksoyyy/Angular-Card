@@ -1,1 +1,64 @@
-dmdlkamdl
+body { font-family: sans-serif; }
+
+.scene {
+  perspective: 600px;
+  margin: 40px auto;
+  border:1px solid red;
+  overflow: visible;
+  width: 450px !important;
+  height: 250px !important;
+  
+}
+.card {
+    position: absolute;    
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+    height: 250px;    
+    border: 1px solid aqua;
+}
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+        background: rgb(170, 34, 34);
+        text-align: center;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+        /* Degisim */
+        
+    position: relative ;
+    overflow:hidden;
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {   
+    position: absolute ;
+    top:0;
+    color: rgb(14, 163, 71);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.card.voted {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+
+.slider-container {
+    position:relative;
+    width: 400px;
+    height: 250px;
+    overflow:hidden;
+    border: 2px solid;
+  } 
+ .slide {
+    position:absolute;
+  }
